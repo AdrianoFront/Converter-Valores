@@ -1,19 +1,25 @@
-function conversor(p1, p2) {
-  return p1 * p2;
-  const moeda = document.getElementsById("reais").value
+function conversor(){
+
+  const valorEmReal = document.getElementById("valorEmReal").value;
+
+  switch opcao{
+  
+    case "US$":
+      document.getElementById("valorFinal").innerHTML = (valor/dolarAmericano).toFixed(2);
+      break;
+  
+    case "Euro$":
+      document.getElementById("valorFinal").innerHTML = (valor/Euro).toFixed(2);
+      break;
+  
+    default:
+      document.getElementById("valorFinal").innerHTML = "<h3 style='color: red'>Erro<h3>";
+      break;
+  }
+
 }
 
 
+const converterBotton = document.querySelector('button');
+converterBotton.onclick = currencyConverter;
 
-
-function toCelsius(fahrenheit) {
-  return (5/9) * (fahrenheit-32);
-}
-document.getElementById("demo").innerHTML = toCelsius(77);
-
-function kiloweightConvert(value) {
-  document.getElementById("Pounds").innerHTML=value*2.2046;
-  document.getElementById("Ounces").innerHTML=value*35.274;
-  document.getElementById("Grams").innerHTML=value*1000;
-  document.getElementById("Stones").innerHTML=value*0.1574;
-}
