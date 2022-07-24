@@ -1,25 +1,14 @@
 function conversor(){
 
-  const valorEmReal = document.getElementById("valorEmReal").value;
+  const MoedaReal = document.getElementById("button").value;
 
-  switch opcao{
+  switch(){
   
     case "US$":
-      document.getElementById("valorFinal").innerHTML = (valor/dolarAmericano).toFixed(2);
+      document.getElementById("resultado").innerHTML = (${MoedaReal});
       break;
-  
-    case "Euro$":
-      document.getElementById("valorFinal").innerHTML = (valor/Euro).toFixed(2);
-      break;
-  
-    default:
-      document.getElementById("valorFinal").innerHTML = "<h3 style='color: red'>Erro<h3>";
-      break;
+
+      document.write("O valor em dólar é: " * 5 );
+   
   }
-
 }
-
-
-const converterBotton = document.querySelector('button');
-converterBotton.onclick = currencyConverter;
-
