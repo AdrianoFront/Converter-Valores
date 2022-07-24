@@ -1,14 +1,3 @@
-function conversor(){
+const conversao = document.querySelector("input#MoedaReal").value
 
-  const MoedaReal = document.getElementById("button").value;
-
-  switch(){
-  
-    case "US$":
-      document.getElementById("resultado").innerHTML = (${MoedaReal});
-      break;
-
-      document.write("O valor em dólar é: " * 5 );
-   
-  }
-}
+document.querySelector("demo").innerHTML = ${Real} / 5;
