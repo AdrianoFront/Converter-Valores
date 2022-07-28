@@ -1,6 +1,22 @@
-function MoedaReal(num1, num2){
-  n1 = parseFloat(document.getElementsById("n1").value);
-  n1 = parseFloat(document.getElementsById("n2").value);
+document.getElementById('btn-converter').onclick = moneyConvert;
+document.getElementById('btn-clear').onclick = clearForm;
+
+
+function moneyConvert(){
+
+  let USS = document.getElementById("dolar").value;
+  let BRL = document.getElementById("real").value;
+
+  if(isNaN(dolar) || isNaN(real)){
+    alert("Digite um valor válido!");
+    return
+}else if(dolar === ''){
+    dolar = (parseFloat(real) / 5,25);
+} else if(celsius === ''){
+    real = (parseFloat(dolar) * 5,25);
+} 
+document.getElementById("dolar").value = parseFloat(dolar).toFixed(2);
+document.getElementById("real").value = parseFloat(real).toFixed(2);
 }
 
 selector = document.getElementsById("selector").value
@@ -12,4 +28,8 @@ switch (selector) {
         break
 }
 
+function clearForm(){
+  document.getElementById("dolar").value = "";
+  document.getElementById("real").value = "";
+}
 
