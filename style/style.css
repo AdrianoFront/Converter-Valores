@@ -31,3 +31,67 @@ h1 {
     text-align: center;
     padding: 24px;
 }
+
+main {
+    padding: 24px;
+}
+
+label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(214, 215, 216);
+}
+
+select {
+    background-color: #FFF;
+    border: 1px solid #BBB;
+    border-radius: 4px;
+    height: 48px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    padding-left: 16px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    margin-top: 6px;
+    margin-bottom: 24px;
+}
+
+input {
+    background-color: #FFF;
+    border: 1px solid #BBB;
+    border-radius: 4px;
+    height: 48px;
+    display: block;
+    width: 100%;
+    outline: none;
+    padding-left: 16px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    font-size: 18px;
+}
+
+button {
+    background-color: rgb(26, 26, 92);
+    border-radius: 25px;
+    height: 48px;
+    cursor: pointer;
+    color:rgb(214, 215, 216);
+    font-style: normal;
+    font-weight: normal;
+    font-size:  16px;
+    line-height: 18px;
+    border: none;
+    width: 100%;
+    margin-top:  24px;
+    margin-bottom: 36px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+button:active {
+    opacity: 0.7;
+}
