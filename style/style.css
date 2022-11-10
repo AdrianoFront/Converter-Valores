@@ -100,7 +100,18 @@ section {
     padding: 10px;
 }
 
-.secton-name {
+.section-name {
     font-size: 14px;
     color: #BBB;
+}
+
+.section-value {
+    color: #207ace;
+    font-weight: bold;
+    font-size:  20px;
+}
+
+.arrow-img {
+    margin:  15px auto;
+    display: block;
 }
