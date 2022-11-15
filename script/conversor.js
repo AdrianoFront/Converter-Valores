@@ -18,6 +18,7 @@ const convertValues = () =>{
     }).format(inputReais / dolar);
 
 
-}
+};
 
 button.addEventListner('click', convertValues)
+button.addEventListner("change", )
