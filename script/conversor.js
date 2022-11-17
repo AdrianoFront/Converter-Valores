@@ -1,4 +1,6 @@
 const button = document.getElementsByClassName('convert-button')
+const select = document.getElementsByClassName('currency-select')
+
 
 const dolar = 5.4
 
@@ -18,7 +20,15 @@ const convertValues = () =>{
     }).format(inputReais / dolar);
 
 
-};
+}
+
+changeCurrency = () => {
+    const currencyName = document.getElementById("currency-name")
+
+    if(select.value === '€ Euro'){
+        currencyName.innerHTML = "Euro"
+    }
+}
 
 button.addEventListner('click', convertValues)
-button.addEventListner("change", )
+select.addEventListner("change", changeCurrency )
