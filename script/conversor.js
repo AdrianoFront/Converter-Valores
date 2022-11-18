@@ -3,6 +3,7 @@ const select = document.getElementsByClassName('currency-select')
 
 
 const dolar = 5.4
+const euro = 5.9
 
 const convertValues = () =>{
     const inputReais = document.getElementById('input-real').value
@@ -18,6 +19,11 @@ const convertValues = () =>{
         style: "currency",
         currency:"USD",
     }).format(inputReais / dolar);
+
+    currencyValueText.innerHTML = new Intl.NumberFormat("de-DE", {
+        style: "currency",
+        currency:"EUR",
+    }).format(inputReais / euro);
 
 
 }
