@@ -15,10 +15,14 @@ const convertValues = () =>{
         currency:"BRL",
     }).format(inputReais);
 
+    if(select.value === "Dólar americano")
+
     currencyValueText.innerHTML = new Intl.NumberFormat("en-US", {
         style: "currency",
         currency:"USD",
     }).format(inputReais / dolar);
+
+    if(select.value === "€ Euro")
 
     currencyValueText.innerHTML = new Intl.NumberFormat("de-DE", {
         style: "currency",
@@ -34,6 +38,8 @@ changeCurrency = () => {
     if(select.value === '€ Euro'){
         currencyName.innerHTML = "Euro"
     }
+    
+    convertValues()
 }
 
 button.addEventListner('click', convertValues)
